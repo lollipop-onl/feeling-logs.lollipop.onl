@@ -1,3 +1,29 @@
 {
-  "name": "website"
+  "name": "website",
+  "version": "1.0.0",
+  "dependencies": {
+    "@reach/router": "^1.3.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@types/reach__router": "^1.3.5",
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8",
+    "parcel-bundler": "^1.12.4",
+    "postcss-modules": "^3.2.2",
+    "prettier": "^2.1.1",
+    "sass": "^1.26.10",
+    "stylelint": "^13.7.1",
+    "stylelint-config-recess-order": "^2.1.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-rscss": "^0.4.0",
+    "stylelint-scss": "^3.18.0",
+    "typescript": "^4.0.2"
+  },
+  "scripts": {
+    "start": "parcel src/index.html",
+    "format": "prettier --config ../../.prettierrc.yml --write \"**/*.{ts,tsx}\"",
+    "lint:css": "stylelint --config ../../.prettierrc.yml \"src/**/*.scss\""
+  }
 }

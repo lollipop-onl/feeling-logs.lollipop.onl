@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
+import { Router } from './Router';
 
 export const Application: FC = () => {
-  return <div>Hello, world.</div>;
+  return <Router />;
 };

@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import cn from 'classnames';
-import { ComponentProps } from '../../../types/component';
+import { ComponentProps } from '../../types/component';
 import styles from './index.module.scss';
 
 type Props = ComponentProps<{}>;

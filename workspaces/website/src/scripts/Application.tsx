@@ -23,5 +23,5 @@ export const Application: FC = () => {
     }
   }, []);
 
-  return <ApplicationLayout><ApplicationNavbar /><Router /></ApplicationLayout>;
+  return <ApplicationLayout><Router /></ApplicationLayout>;
 };

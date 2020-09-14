@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { ComponentProps } from '../../../types/component';
+import { ComponentProps } from '../../types/component';
 
 type Props = ComponentProps<{
   /** ロゴカラー */

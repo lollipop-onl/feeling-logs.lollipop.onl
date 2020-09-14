@@ -4,10 +4,8 @@ import { ApplicationNavbar } from '../../components/ApplicationNavbar';
 
 type Props = RouteComponentProps<{}>;
 
-export const LandingPage: FC<Props> = () => {
-  return (
-    <div>
-      <ApplicationNavbar isNavigationVisible={false} />
-    </div>
-  );
+export const HomePage: FC<Props> = () => {
+  return <div>
+
+    <ApplicationNavbar isNavigationVisible /><p>404 not found.</p></div>;
 };

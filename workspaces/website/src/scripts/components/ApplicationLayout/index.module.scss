@@ -1,0 +1,15 @@
+$minHeight: calc(var(--vh, 1vh) * 100);
+
+.applicationLayout {
+  width: 100%;
+  min-height: $minHeight;
+  background-color: var(--foundation-color);
+
+  > .container {
+    width: 100%;
+    max-width: 800px;
+    min-height: $minHeight;
+    margin: 0 auto;
+    background-color: var(--background-color);
+  }
+}

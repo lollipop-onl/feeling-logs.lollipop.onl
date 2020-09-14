@@ -1,0 +1,24 @@
+@import '~reset-css';
+
+:root {
+  // カラーパレット
+  --primary-color: #FEAD26;
+  // 汎用カラー
+  --foundation-color: #000;
+  --background-color: #fff;
+  // コンポーネント別カラー
+  --navbar-color: #152B3C;
+  --navbar-border-color: #{rgba(#fff, 0.3)};
+  --navbar-navigation-color: #{rgba(#fff, 0.2)};
+  --navbar-logo-color: #fff;
+  --navbar-link-color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  background-color: var(--foundation-color);
+}

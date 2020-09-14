@@ -20,8 +20,12 @@ export const Application: FC = () => {
 
     return () => {
       window.removeEventListener('resize', onResize);
-    }
+    };
   }, []);
 
-  return <ApplicationLayout><Router /></ApplicationLayout>;
+  return (
+    <ApplicationLayout>
+      <Router />
+    </ApplicationLayout>
+  );
 };

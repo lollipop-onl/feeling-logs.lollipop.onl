@@ -9,15 +9,20 @@ type Props = ComponentProps<{
   isNavigationVisible?: boolean;
 }>;
 
-export const ApplicationNavbar: FC<Props> = ({ className, isNavigationVisible = false }) => {
+export const ApplicationNavbar: FC<Props> = ({
+  className,
+  isNavigationVisible = false,
+}) => {
   return (
     <header className={cn(className, styles.applicationNavbar)}>
       <ServiceLogo className={styles.logo} color="#fff" />
-      { isNavigationVisible ? (
+      {isNavigationVisible ? (
         <nav className={styles.navigation}>
-          <Link className={styles.link} to="/home">Back to Home</Link>
+          <Link className={styles.link} to="/home">
+            Back to Home
+          </Link>
         </nav>
-      ) : null }
+      ) : null}
     </header>
-  )
+  );
 };

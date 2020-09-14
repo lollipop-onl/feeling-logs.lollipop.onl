@@ -6,9 +6,9 @@ import styles from './index.module.scss';
 type Props = ComponentProps<{}>;
 
 export const ApplicationLayout: FC<Props> = ({ className, children }) => {
-  return <div className={cn(className, styles.applicationLayout)}>
-    <div className={styles.container}>
-      {children}
+  return (
+    <div className={cn(className, styles.applicationLayout)}>
+      <div className={styles.container}>{children}</div>
     </div>
-  </div>
+  );
 };
